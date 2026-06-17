@@ -36,15 +36,15 @@ def get_distro_info():
     except Exception:
         return "linux", "Linux"
 
-SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
+SCRIPT_DIR = "/usr/share/mfetch"
 
 def get_ascii(distro):
-    for base in (SCRIPT_DIR, os.getcwd()):
+    for base in (SCRIPT_DIR, os.path.dirname(os.path.realpath(__file__)), os.getcwd()):
         path = os.path.join(base, "ascii", f"{distro}.txt")
         if os.path.exists(path):
             with open(path) as f:
                 return f.read()
-    for base in (SCRIPT_DIR, os.getcwd()):
+    for base in (SCRIPT_DIR, os.path.dirname(os.path.realpath(__file__)), os.getcwd()):
         path = os.path.join(base, "ascii", "linux.txt")
         if os.path.exists(path):
             with open(path) as f:
