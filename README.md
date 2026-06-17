@@ -31,7 +31,7 @@ Packages: 1342 (pacman), 4 (flatpak)
 ## Installation
 
 ```bash
-git clone https://github.com/yourusername/mfetch
+git clone https://github.com/larprxlokm/mfetch
 cd mfetch
 chmod +x mfetch
 ```
