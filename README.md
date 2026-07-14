@@ -1,6 +1,6 @@
 # mfetch
 
-A minimal, fast system info tool written in Python. No dependencies beyond the standard library.
+A minimal fast system info tool written in python no dependencies cause i said so.
 
 ```
 wraith@acer
